@@ -12,7 +12,7 @@ class Hero{
     char level;
 
     Hero(){
-        cout<<"Constructor is created";
+        cout<<"Constructor is created"<<endl;
     }
 
     // void public_details()
@@ -29,10 +29,16 @@ class Hero{
 
 int main()
 {
+    //static allocation
     Hero paul;
-    paul.first_name = 'Neel';
+    
+    //dynamic allocation
+    Hero *b = new Hero;
+
+
+/*     paul.first_name = 'Neel';
     paul.last_name = 'Roy';
-    paul.public_details();
+    paul.public_details(); */
     return 0;
 
 }
