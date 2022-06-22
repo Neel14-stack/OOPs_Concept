@@ -22,6 +22,7 @@ class a{
     char data(char a)
     {
         cout<<"char data is showing: "<<a<<endl;
+        return a;
     }
 };
 
@@ -30,7 +31,7 @@ int main()
     a ob;
     ob.data();
     ob.data(5);
-    ob.data('a');
+    char x = ob.data('a');
     ob.data(5,10);
 
 
